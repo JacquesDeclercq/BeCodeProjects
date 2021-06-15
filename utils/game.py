@@ -59,8 +59,10 @@ class Hangman:
 #this method is the game play. displaying the word_to_find, guessing and completing the word_to_find and calling the print function of start_game()
 
     def play_game(self): #, word_to_find):
+        # COACHES' NOTE: this method is waaay too long. subdivide into smaller functions like 'inform_user', 'update_game_state',....
         guessed = False
         print("\n")
+        # COACHES' NOTE: You should not use comments to compensate for a lack of functions. They just make the project seem more cluttered.
 #We help the player by giving the length of word
 
         print(self.word_to_complete," ", "the length of the word is : ", self.length_word_to_find)
@@ -160,3 +162,7 @@ class Hangman:
 
 if __name__ == "__main__":
     Hangman()
+
+# COACHES' NOTE: Decent, but too many comments that could have been functions. Don't go on a comment free spree, only use them when absolutely needed.
+    
+  
